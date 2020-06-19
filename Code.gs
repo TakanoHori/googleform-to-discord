@@ -1,10 +1,10 @@
 /// Discordに投稿する
 function PostToDiscord(text) {
-  const url = 'https://discordapp.com/api/webhooks/723553418056171591/EH8sQkUYZElR_TGHkPNKjldnSFqQzk33YNxE7K7nSoK4vmAcf1siWywbE7MmxngcbIYa';
-  const token      = 'EH8sQkUYZElR_TGHkPNKjldnSFqQzk33YNxE7K7nSoK4vmAcf1siWywbE7MmxngcbIYa';
-  var channel    = '#test-bot';
-  var Botname   = 'Spidey Bot';
-  var parse      = 'full';
+  const url = 'WebhookのURL';
+  const token = 'token';
+  var channel = 'チャンネル名';
+  var Botname = 'ボット名';
+  var parse = 'full';
 
   var payload = {
         'token'      : token,
@@ -24,12 +24,12 @@ function PostToDiscord(text) {
 }
 
 function test() {
-  PostToDiscord("テスト通知確認です");
+  PostToDiscord("テスト投稿");
 }
 
 function onFormSubmit(e){
 
-  var body = "Slack通知テストフォームが来たよ！\n"; 
+  var body = "回答\n"; 
   var applicant = "";
   var itemResponse = e.response.getItemResponses();
 

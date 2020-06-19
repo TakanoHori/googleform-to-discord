@@ -1,4 +1,4 @@
-/// Discordに投稿する
+// Discordに投稿する
 function PostToDiscord(text) {
   const url = 'WebhookのURL';
   const token = 'token';
